@@ -3,8 +3,6 @@ import numpy as np
 
 steps = 75
 
-cubic = lambda x: x**2
-
 def mandelbrot(c, func = lambda x: x**2) -> float:
     z = 0
     for step in range(steps):
@@ -22,7 +20,7 @@ def gen(ncols, nrows, minx, maxx, miny, maxy) -> np.array:
         re = minx
         for row in range(nrows):
             c = complex(re, im)
-            col_li.append(mandelbrot(c, cubic))
+            col_li.append(mandelbrot(c))
             re += (maxx+abs(minx))/nrows
         col_li = np.array(col_li)
         res.append(col_li)
