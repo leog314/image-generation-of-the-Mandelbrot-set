@@ -38,6 +38,7 @@ class Mandelbrot:
         self.minx, self.maxx, self.miny, self.maxy = minx, maxx, miny, maxy
         self.func = func
         self.t = threshold
+        
     def mandelbrot(self, c: complex) -> float:
         z = c
         for step in range(self.its):
