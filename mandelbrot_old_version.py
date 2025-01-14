@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+# erstes Programm: kein Zoom möglich
+
 steps = 75
 
 def mandelbrot(c, func = lambda x: x**2) -> float:
@@ -28,7 +30,7 @@ def gen(ncols, nrows, minx, maxx, miny, maxy) -> np.array:
         print(col) if col % 1000 == 0 else None
     return np.array(res)
 
-data = gen(120, 120, -1.75, 0.5, -1.125, 1.125)
+data = gen(1000, 1000, -1.75, 0.5, -1.125, 1.125)
 
 fig, ax = plt.subplots(1, 1)
 
@@ -37,5 +39,5 @@ color = plt.imshow(data, cmap="RdPu")
 plt.axis('off')
 
 plt.colorbar(color)
-plt.savefig("mandelbrot.png")
+# plt.savefig("mandelbrot.png")
 plt.show()
