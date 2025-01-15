@@ -1,8 +1,8 @@
 # image-generation-of-the-Mandelbrot-set
 
 **Requirements:** 
-    Python
-   pip install matplotlib numpy 
+
+    pip install matplotlib numpy 
 
 In diesem Repository kann der Quellcode für einige der Programme der Jugend forscht Arbeit/Facharbeit gefunden werden. Folgende Programme sind enthalten:
 
@@ -16,3 +16,7 @@ Zuletzt getestet am 15.01.2025 unter Arch Linux und Windows.
 Bei Änderungen am Programmcode sind die entsprechenden Kommentare zu beachten.
 
 Beispielbilder findet man unter '/images'.
+
+![alt text](https://github.com/leog314/image-generation-of-the-Mandelbrot-set/blob/main/images/mandelbrot_scaled.png?raw=true)
+
+![alt text](https://github.com/leog314/image-generation-of-the-Mandelbrot-set/blob/main/images/mandelbrot%403d.png?raw=true)
